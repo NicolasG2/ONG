@@ -2,23 +2,22 @@ const navbarCreator = [
   {
     navbar: "",
     home: "",
-    navLink1: "",
-    navLink2: "",
-    navLink3: "",
-    navLink4: "",
+    navLink1: "Home",
+    navLink2: "Our History",
+    navLink3: "Our Locations",
+    navLink4: "Contact Us",
     /*<nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Vou ver</a>
-            <a class="nav-link" href="#">Our History</a>
-            <a class="nav-link" href="#">Our Locations</a>
-            <a class="nav-link" href="#">Contact Us</a>
-          </div>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Our History</a>
+                    <a class="nav-link" href="#">Our Locations</a>
+                    <a class="nav-link" href="#">Contact Us</a>
+                </div>
+            </div>
         </div>
-    </div>
-  </nav>*/
+    </nav>*/
   }
 ]
 
@@ -75,21 +74,18 @@ let container = document.querySelector(".container");
 
 const nav = () => {
   navbarCreator => {
-    let navbar = `<nav class="navbar">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Navbar</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                          <a class="nav-link1 active" aria-current="page" href="#">Home</a>
-                          <a class="nav-link2" href="#">Our History</a>
-                          <a class="nav-link3" href="#">Our Locations</a>
-                          <a class="nav-link4" href="#">Contact Us</a>
-                        </div>
+    let navbar = `
+                  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                      <div class="container-fluid">
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                              <div class="navbar-nav">
+                                  <a class="nav-link" href="#">${navLink1}</a>
+                                  <a class="nav-link" href="#">${navLink2}</a>
+                                  <a class="nav-link" href="#">${navLink3}</a>
+                                  <a class="nav-link" href="#">${navLink4}</a>
+                              </div>
+                          </div>
                       </div>
-                    </div>
                   </nav>
                   `;
   };
