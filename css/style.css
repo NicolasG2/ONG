@@ -48,12 +48,16 @@
 }
 
 .card-botao {
-    width: 180px;
-    height: 25px;
-    border: none;
-    border-radius: 5px;
-    background-color: cadetblue;
-    color: white;
+  width: 180px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: cadetblue;
+}
+
+.card-botao a {
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
