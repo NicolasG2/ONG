@@ -91,6 +91,7 @@ footer {
   background-image: url("../img/footer.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  width: 1200px;
   height: 590px;
   color: white;
 }
@@ -101,6 +102,7 @@ footer h1, footer h2, .footer-texto, .footer-redes {
 
 footer h1 {
   padding-top: 4rem;
+  
 }
 
 footer h1, footer h2 {
@@ -132,6 +134,19 @@ footer h1, footer h2 {
 
   .card {
     width: 80%;
+  }
+
+  footer {
+    padding: 0px 0px 0px 0px;
+    background-image: url("../img/rodape/background.jpeg");
+    background-position: initial;
+    height: 1300px;
+    width: 598px;
+  }
+
+  .footer-redes {
+    display: flex;
+    flex-direction: column;
   }
 }
 
