@@ -1,14 +1,3 @@
-/*const navbarCreator = [
-  {
-    navbar: "",
-    home: "",
-    navLink1: "Home",
-    navLink2: "Our History",
-    navLink3: "Our Locations",
-    navLink4: "Contact Us",
-  }
-]*/
-
 const listaPosts = [
   {
     titulo: "Max - Jack Russel Terrier",
@@ -55,25 +44,6 @@ const listaPosts = [
 
 let container = document.querySelector(".container");
 
-/* teste de fazer o nav pelo js. já que não deu certo, fiz no index
-const nav = () => {
-  navbarCreator => {
-    let navbar = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Home</a>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                          <a class="nav-link" href="#">${navLink1}</a>
-                          <a class="nav-link" href="#">${navLink2}</a>
-                          <a class="nav-link" href="#">${navLink3}</a>
-                          <a class="nav-link" href="#">${navLink4}</a>
-                        </div>
-                      </div>
-                    </div>
-                  </nav>`;
-    container.innerHTML += navbar;
-};*/
-
 const criacaoPosts = () => {
   listaPosts.forEach((post) => {
     let card = `   
@@ -90,4 +60,36 @@ const criacaoPosts = () => {
 
 window.onload = () => {
   criacaoPosts();
+
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    console.log(card);
+    card.addEventListener("mousemove", () => {
+      card.style.backgroundColor = "yellow";
+    });
+
+    card.addEventListener("mouseout", ()=> {
+      card.style.backgroundColor = "transparent"
+    });
+  });
 };
+
+let botaoTema = document.querySelector("#botaoTema");
+console.log(botaoTema);
+
+botaoTema.addEventListener("click", () => {
+  let body = document.querySelector("body");
+
+  if (botaoTema.checked) {
+    body.classList.add("body-dark");
+  } else {
+    body.classList.remove("body-dark");
+  }
+});
+
+inputTeste = document.getElementById("inputTeste");
+
+inputTeste.addEventListener("keydown", (tecla) => {
+  alert("Tecla pressionada: " + tecla.key);
+});
