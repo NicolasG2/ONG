@@ -15,14 +15,8 @@ header {
     background-color: rgb(19, 68, 68);
 }
 
-.switch-area {
-    display: flex;
-    flex-direction: row;
-    gap: 250px
-}
-
-.navbar ul li {
-    width: 5%;
+.sol {
+    background-image: url("../img/sol.png");
 }
 
 .switch {

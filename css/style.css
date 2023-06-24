@@ -34,7 +34,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .card {
@@ -78,11 +78,9 @@ header {
   border: none;
   border-radius: 5px;
   background-color: cadetblue;
-}
-
-.card-botao a {
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 footer {
