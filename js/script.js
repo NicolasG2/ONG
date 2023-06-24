@@ -66,27 +66,13 @@ window.onload = () => {
   cards.forEach((card) => {
     console.log(card);
     card.addEventListener("mousemove", () => {
-      card.style.backgroundColor = "yellow";
+  
     });
 
     card.addEventListener("mouseout", ()=> {
-      card.style.backgroundColor = "transparent"
     });
   });
 };
-
-let botaoTema = document.querySelector("#botaoTema");
-console.log(botaoTema);
-
-botaoTema.addEventListener("click", () => {
-  let body = document.querySelector("body");
-
-  if (botaoTema.checked) {
-    body.classList.add("body-dark");
-  } else {
-    body.classList.remove("body-dark");
-  }
-});
 
 inputTeste = document.getElementById("inputTeste");
 
