@@ -68,13 +68,13 @@ header {
 
 .card-descricao {
   text-align: justify;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   flex-grow: 1;
 }
 
 .card-botao {
   width: 180px;
-  height: 25px;
+  height: 30px;
   border: none;
   border-radius: 5px;
   background-color: cadetblue;
@@ -100,7 +100,6 @@ footer h1, footer h2, .footer-texto, .footer-redes {
 
 footer h1 {
   padding-top: 4rem;
-  
 }
 
 footer h1, footer h2 {

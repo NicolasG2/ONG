@@ -71,12 +71,6 @@ window.onload = () => {
 
   cards.forEach((card) => {
     console.log(card);
-    card.addEventListener("mousemove", () => {
-
-    });
-
-    card.addEventListener("mouseout", () => {
-    });
 
     card.lastElementChild.addEventListener("click", (event) => {
       event.preventDefault();
