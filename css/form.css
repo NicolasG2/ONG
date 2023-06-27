@@ -6,6 +6,13 @@
     font-size: 18px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -15,12 +22,17 @@ h1 {
 }
 
 form {
+    width: 50%;
+    height: 600px;
+    border: #d38726 solid 1px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 20px;
+    padding: 15px;
 }
+
 /*
 .form-item {
     display: flex;
@@ -29,11 +41,14 @@ form {
 }
 */
 
-.form-item input, .form-item select, .form-item textarea {
+.form-item input,
+.form-item select,
+.form-item textarea {
     border-radius: 5px;
 }
 
-.form-item input[type=reset], .form-item input[type=submit] {
+.form-item-button input[type=reset],
+.form-item-button input[type=submit] {
     /*display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +60,9 @@ form {
     width: 120px;
 }
 
-label, span, option {
+label,
+span,
+option {
     font-size: 1.1rem;
 }
 
