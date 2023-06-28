@@ -4,41 +4,62 @@ console.log(botaoTema);
 botaoTema.addEventListener("click", () => {
   let body = document.querySelector("body");
   let header = document.querySelector("header");
-  let nav_link = document.querySelector(".nav-link");
+  let nav_link = document.querySelectorAll(".nav-link");
   let nav_link_active = document.querySelector(".nav-link.active");
-  let card = document.querySelector(".card");
-  let card_titulo = document.querySelector(".card-titulo");
-  let card_descricao = document.querySelector(".card-descricao");
-  let card_botao = document.querySelector(".card-botao");
+  let cards = document.querySelectorAll(".card");
+  let cards_descricao = document.querySelectorAll(".card-descricao");
+  let cards_botao = document.querySelectorAll(".card-botao");
+  let form = document.querySelector("form");
 
   if (botaoTema.checked) {
     body.classList.add("body-dark");
     header.classList.add("header-dark");
-    nav_link.classList.add("nav-link-dark");
+
+    nav_link.forEach((nav) => {
+      nav.classList.add("nav-link-dark")
+    });
+
     nav_link_active.classList.add("nav-link-dark.active");
 
-    card.forEach(card => {
+    cards.forEach((card) => {
       card.classList.add("card-dark");
-      card_titulo.classList.add("card-dark-titulo");
-      card_descricao.classList.add("card-dark-descricao");
-      card_botao.classList.add("card-dark-botao");
     });
+
+    cards_descricao.forEach((descricao) => {
+      descricao.classList.add("card-dark-descricao");
+    });
+
+    cards_botao.forEach((botao) => {
+      botao.classList.add("card-dark-botao");
+    });
+
+    form.classList.add("form-dark");
 
   } else {
     body.classList.remove("body-dark");
     header.classList.remove("header-dark");
+
+    nav_link.forEach((nav) => {
+      nav.classList.remove("nav-link-dark")
+    });
+
     nav_link_active.classList.remove("nav-link-dark.active");
 
-    card.forEach(card => {
+    cards.forEach((card) => {
       card.classList.remove("card-dark");
-      card_titulo.classList.remove("card-dark-titulo");
-      card_descricao.classList.remove("card-dark-descricao");
-      card_botao.classList.remove("card-dark-botao");
     });
+
+    cards_descricao.forEach((descricao) => {
+      descricao.classList.remove("card-dark-descricao");
+    });
+
+    cards_botao.forEach((botao) => {
+      botao.classList.remove("card-dark-botao");
+    });
+
+    form.classList.remove("form-dark");
   }
 });
-
-
 
 /*var linkElement = document.getElementById('dinamico');
 

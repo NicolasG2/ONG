@@ -17,11 +17,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     color: #d38726;
 }
 
 form {
+    background-color: rgb(207, 157, 92);
     width: 50%;
     height: 600px;
     border: #d38726 solid 1px;
@@ -33,31 +34,33 @@ form {
     padding: 15px;
 }
 
-/*
-.form-item {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-*/
-
 .form-item input,
 .form-item select,
 .form-item textarea {
     border-radius: 5px;
+    border-color: rgb(76, 115, 70);
+}
+
+.form-item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
 .form-item-button input[type=reset],
 .form-item-button input[type=submit] {
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: calc(1);*/
     border: none;
     border-radius: 10px;
     background-color: rgb(76, 115, 70);
     height: 30px;
     width: 120px;
+}
+
+.form-item-button input[type=reset]:hover,
+.form-item-button input[type=submit]:hover {
+    background-color: rgb(15, 77, 5);
+    color: white;
 }
 
 label,

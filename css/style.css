@@ -37,6 +37,8 @@ header {
   gap: 1.2rem;
 }
 
+/* Cards */
+
 .card {
   border: 1px solid cadetblue;
   border-radius: 10px;
@@ -73,6 +75,9 @@ header {
 }
 
 .card-botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   height: 30px;
   border: none;
@@ -83,13 +88,19 @@ header {
   text-align: center;
 }
 
+.card-botao:hover {
+  background-color: #d38726;
+}
+
+/* Footer */
+
 footer {
   margin-top: 100px;
   padding-left: 60px;
+  background-color: rgb(8, 8, 8);
   background-image: url("../img/rodape/footer.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 1200px;
   height: 590px;
   color: white;
 }
@@ -123,6 +134,8 @@ footer h1, footer h2 {
   text-decoration: none;
 }
 
+/* Media Querries */
+
 @media (max-width: 600px) {
 
   * {
@@ -155,5 +168,15 @@ footer h1, footer h2 {
 
   .card {
     width: 40%;
+  }
+
+  .card-descricao {
+    text-align: center;
+    line-height: 1;
+  }
+
+  .footer-redes {
+    position: relative;
+    bottom: 50px;
   }
 }

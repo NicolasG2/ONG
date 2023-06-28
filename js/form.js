@@ -1,6 +1,6 @@
 let formulario = document.querySelector("form");
 
-const checkInputs = (nome, telefone, email) => {
+const checkInputs = (nome, telefone, email, renda1000, renda5000, renda10000, residencia, intencao) => {
 
     let control = true;
 
@@ -21,6 +21,41 @@ const checkInputs = (nome, telefone, email) => {
     if (email.value.trim() == "") {
 
         email.classList.add("erro");
+
+        control = false;
+    }
+
+    if (renda1000.value.trim() == "") {
+
+        renda1000.classList.add("erro");
+
+        control = false;
+    }
+
+    if (renda5000.value.trim() == "") {
+
+        renda5000.classList.add("erro");
+
+        control = false;
+    }
+
+    if (renda10000.value.trim() == "") {
+
+        renda10000.classList.add("erro");
+
+        control = false;
+    }
+
+    if (residencia.value.trim() == "") {
+
+        residencia.classList.add("erro");
+
+        control = false;
+    }
+
+    if (intencao.value.trim() == "") {
+
+        intencao.classList.add("erro");
 
         control = false;
     }

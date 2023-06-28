@@ -10,9 +10,8 @@
 Header/Button 11, 49, 49
 Background 1, 10, 10
 Footer 8, 8, 8
-Slider #031d33
+Slider #d38726
 Logo 76, 115, 70
-Laranja #d38726
 */
 
 .body-dark {
@@ -31,6 +30,8 @@ Laranja #d38726
 .nav-link-dark.active {
     color: #d38726 !important;
 }
+
+/* Switch */
 
 .switch {
     position: relative;
@@ -70,11 +71,11 @@ Laranja #d38726
 }
 
 input:checked+.slider {
-    background-color: #031d33;
+    background-color: #d38726;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #031d33;
+    box-shadow: 0 0 1px #d38726;
 }
 
 input:checked+.slider:before {
@@ -91,6 +92,7 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
+/* Cards */
 .card-dark {
     border-radius: 10px;
     overflow: hidden;
@@ -105,11 +107,6 @@ input:checked+.slider:before {
     width: 30%;
     height: 500px;
     padding: 0.8rem;
-}
-
-.card-dark-titulo {
-    text-align: center;
-    color: #d38726;
 }
 
 .card-dark-descricao {
@@ -131,9 +128,17 @@ input:checked+.slider:before {
 
 /* Form elements */
 
-.form-item input[type=reset], .form-item input[type=submit] {
+.form-dark {
+    border-color: cadetblue;
+    background-color: rgb(1, 10, 10);
+}
+
+.form-item input[type=reset],
+.form-item input[type=submit] {
     background-color: rgb(76, 115, 70);
 }
+
+/* Media Querries */
 
 @media (max-width: 600px) {
 
@@ -167,5 +172,15 @@ input:checked+.slider:before {
 
     .card {
         width: 40%;
+    }
+
+    .card-descricao {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .footer-redes {
+        position: relative;
+        bottom: 50px;
     }
 }
